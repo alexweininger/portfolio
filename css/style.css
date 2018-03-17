@@ -66,6 +66,7 @@ nav {
     height: auto;
     padding-bottom: 3%;
     user-select: none;
+    min-height: 100vh;
 }
 
 div.container-fluid {
@@ -131,6 +132,7 @@ div.content-block {
     padding-top: 3%;
     text-align: center;
     padding-bottom: 3%;
+    margin: 0;
 }
 
 .center {
@@ -193,6 +195,7 @@ div.content-block {
 div.content-block.light {
     color: #333;
     background: #fff;
+    margin: 0;
 }
 
 div.content-block.light div.well {
@@ -207,13 +210,13 @@ div.content-block.dark {
     color: #fff;
     background-image: url(../assets/cartographer.png);
     background-repeat: repeat;
+    margin: 0;
 }
 
 .parallax {
     /* The image used is from subtlepatterns.com*/
     background-image: url(../assets/cartographer.png);
     /* Full height */
-    height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-repeat: repeat;
@@ -236,4 +239,33 @@ a.black-link {
 
 a.black-link:hover {
     color: #666;
+}
+
+footer {
+    color: #fff;
+    background: #333;   
+    margin: 0;
+    text-align: center;
+    padding-top: 1%;
+    padding: 0;
+}
+
+footer p {
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.85em;
+    display: inline-block;
+    text-align: center;
+    margin-right: 3%;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #999;
+}
+
+.well p.inline{
+    display: inline;
 }
