@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     font-family: "Source Sans Pro", sans-serif;
     background: #fff;
     padding: 0;
@@ -43,6 +44,11 @@ ul.nav li:hover {
     color: #333;
 }
 
+ul.nav li a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
 nav {
     text-align: center;
 }
@@ -85,51 +91,53 @@ div.container-fluid {
     -webkit-margin-start: 0px;
 }
 
-p.comments{
+p.comments {
     font-size: 21px;
     display: inline-block;
     text-align: center;
 }
 
-.spacer{
+.spacer {
     height: 10rem;
 }
 
-nav ul.top-nav{
+nav ul.top-nav {
     text-align: center;
     margin: 0px;
     display: none;
 }
 
-nav ul.top-nav li{
+nav ul.top-nav li {
     display: inline-block;
     padding-left: 3%;
 }
 
-nav ul.top-nav li a{
+nav ul.top-nav li a {
     text-decoration: underline;
     color: #fff;
 }
 
-nav ul.top-nav li a:hover{
+nav ul.top-nav li a:hover {
     color: rgb(226, 226, 226)
 }
 
-.big-heading{
-    font-size: 3em; 
+.big-heading {
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
 }
-div.content-block{
+
+div.content-block {
     padding-top: 3%;
     text-align: center;
     padding-bottom: 3%;
 }
-.center{
+
+.center {
     text-align: center;
 }
 
-.well h3 a{
+.well h3 a {
     padding: 6 8px;
     border-radius: 3px;
     background: #333;
@@ -137,14 +145,15 @@ div.content-block{
     border-radius: 3px;
     font-size: 1.5rem;
     padding: 6px 10px;
-    font-family: Source Code Pro,monospace;
+    font-family: Source Code Pro, monospace;
     font-weight: 500;
     text-decoration: none;
     display: block;
     border: none;
+    user-select: none;
 }
 
-.well h3 a:hover{
+.well h3 a:hover {
     background: #000;
 }
 
@@ -153,19 +162,21 @@ div.content-block{
     text-decoration: none;
     color: #fff;
 }
-.left{
-    text-align: left;
-}
-.well-text{
+
+.left {
     text-align: left;
 }
 
-.well-text p{
+.well-text {
+    text-align: left;
+}
+
+.well-text p {
     margin: 30px 0px 30px 5px;
 }
 
 .well-text code {
-    font-family: "Source Code Pro",monospace;
+    font-family: "Source Code Pro", monospace;
     font-size: .75rem;
     background: #fff;
     border-radius: 3px;
@@ -174,43 +185,55 @@ div.content-block{
     color: #333;
 }
 
-.comments.content-block{
+.comments.content-block {
     margin-bottom: 5%;
     margin-top: 3%;
 }
 
-div.content-block.light{
+div.content-block.light {
     color: #333;
     background: #fff;
 }
 
-div.content-block.light div.well{
+div.content-block.light div.well {
     color: #fff;
 }
 
-div.content-block.light div.well-text{
+div.content-block.light div.well-text {
     color: #333;
 }
 
-div.content-block.dark{
+div.content-block.dark {
     color: #fff;
     background-image: url(../assets/cartographer.png);
     background-repeat: repeat;
 }
 
-.parallax { 
+.parallax {
     /* The image used is from subtlepatterns.com*/
     background-image: url(../assets/cartographer.png);
-
     /* Full height */
-    height: 100%; 
-
+    height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-repeat: repeat;
 }
 
-code.dark{
+code.dark {
     color: white;
     background: none;
+    user-select: none;
+}
+
+code {
+    user-select: none;
+}
+
+a.black-link {
+    color: #333;
+    text-decoration: underline;
+}
+
+a.black-link:hover {
+    color: #666;
 }
