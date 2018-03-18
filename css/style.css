@@ -1,10 +1,25 @@
 html,
 body {
     font-family: "Source Sans Pro", sans-serif;
-    background: #fff;
+    margin: 0;
     padding: 0;
-    color: #333;
     height: 100%;
+    color: #333;
+    background: #fff;
+}
+
+/* bav bar */
+
+nav {
+    text-align: center;
+}
+
+ul.nav {
+    color: #eaeaea;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-align: center;
+    display: inline-block;
 }
 
 ul.nav li {
@@ -19,14 +34,6 @@ ul.nav li {
 
 li {
     line-height: 1.4;
-}
-
-ul.nav {
-    color: #eaeaea;
-    font-weight: 700;
-    letter-spacing: .1em;
-    text-align: center;
-    display: inline-block;
 }
 
 ul.nav li a {
@@ -49,24 +56,11 @@ ul.nav li a:hover {
     text-decoration: none;
 }
 
-nav {
-    text-align: center;
-}
-
 .nametag {
     text-align: center;
     color: white;
     padding: 6px 8px;
     font-family: inherit;
-}
-
-.billboard {
-    background-image: url(../assets/cartographer.png);
-    background-repeat: repeat;
-    height: auto;
-    padding-bottom: 3%;
-    user-select: none;
-    min-height: 100vh;
 }
 
 div.container-fluid {
@@ -135,6 +129,14 @@ div.content-block {
     margin: 0;
 }
 
+div.content-block.dark#header {
+    background-image: url(../assets/cartographer.png);
+    background-repeat: repeat;
+    padding-bottom: 3%;
+    user-select: none;
+    min-height: 100vh;
+}
+
 .center {
     text-align: center;
 }
@@ -187,10 +189,11 @@ div.content-block {
     color: #333;
 }
 
-.comments.content-block {
+.content-block p.comments{
     margin-bottom: 5%;
     margin-top: 3%;
 }
+
 
 div.content-block.light {
     color: #333;
@@ -226,7 +229,7 @@ code.dark {
     color: white;
     background: none;
     user-select: none;
-}
+}   
 
 code {
     user-select: none;
@@ -243,7 +246,7 @@ a.black-link:hover {
 
 footer {
     color: #fff;
-    background: #333;   
+    background: #333;
     margin: 0;
     text-align: center;
     padding-top: 1%;
@@ -266,6 +269,28 @@ footer a:hover {
     color: #999;
 }
 
-.well p.inline{
+.well p.inline {
     display: inline;
+}
+
+/* fixed side nav */
+
+.sidebar {
+    z-index: 1;
+    height: auto;
+    width: 10px;
+    position: fixed;
+    z-index: 1;
+    top: 40%;
+    left: 10px;
+    background: none;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+.sidebar .bar{
+    height: 4vh;
+    width: 5px;
+    background: #eaeaea;
+    margin-bottom: 2px;
 }
