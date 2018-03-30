@@ -167,6 +167,12 @@ div.content-block.dark#header {
     color: #fff;
 }
 
+
+.well{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .left {
     text-align: left;
 }
