@@ -8,6 +8,11 @@ body {
     background: #fff;
 }
 
+.content-block.half {
+    max-height: 5vh;
+    min-height: 0px;
+}
+
 /* bav bar */
 
 nav {
@@ -298,4 +303,17 @@ footer a:hover {
     width: 5px;
     background: #eaeaea;
     margin-bottom: 2px;
+}
+.title-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.title-link:hover{
+    text-decoration: none;
+    color: inherit;
+}
+.content-block.half {
+    max-height: 50%;
+    min-height: 0px;
 }
