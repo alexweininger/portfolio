@@ -17,6 +17,7 @@ body {
 
 nav {
     text-align: center;
+    user-select: none;
 }
 
 ul.nav {
@@ -66,6 +67,7 @@ ul.nav li a:hover {
     color: white;
     padding: 6px 8px;
     font-family: inherit;
+    user-select: none;
 }
 
 div.container-fluid {
@@ -77,11 +79,11 @@ div.container-fluid {
     color: #fff;
     display: inline-block;
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 80px;
+    font-size: 12vw;
     font-weight: 900;
     height: 80px;
     line-height: 80px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -91,20 +93,25 @@ div.container-fluid {
     -webkit-margin-start: 0px;
 }
 
-p.comments {
-    font-size: 21px;
+.nametag p.comments {
+    font-size: 5vw;
     display: inline-block;
     text-align: center;
 }
 
+
+
+
+
 .spacer {
-    height: 10rem;
+    height: 10vh;
 }
 
 nav ul.top-nav {
     text-align: center;
     margin: 0px;
     display: none;
+    user-select: none;
 }
 
 nav ul.top-nav li {
@@ -122,7 +129,7 @@ nav ul.top-nav li a:hover {
 }
 
 .big-heading {
-    font-size: 3em;
+    font-size: 6vw;
     font-weight: bold;
     text-align: center;
 }
@@ -132,6 +139,7 @@ div.content-block {
     text-align: center;
     padding-bottom: 3%;
     margin: 0;
+    padding: 3vh 0 3vh 0;
 }
 
 div.content-block.dark#header {
@@ -146,22 +154,6 @@ div.content-block.dark#header {
     text-align: center;
 }
 
-.well h3 a {
-    padding: 6 8px;
-    border-radius: 3px;
-    background: #333;
-    color: #fff;
-    border-radius: 3px;
-    font-size: 1.5rem;
-    padding: 6px 10px;
-    font-family: Source Code Pro, monospace;
-    font-weight: 500;
-    text-decoration: none;
-    display: block;
-    border: none;
-    user-select: none;
-}
-
 .well h3 a:hover {
     background: #000;
 }
@@ -170,6 +162,19 @@ div.content-block.dark#header {
     text-align: left;
     text-decoration: none;
     color: #fff;
+    padding: 6 8px;
+    border-radius: 3px;
+    background: #333;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 4vw;
+    padding: 6px 10px;
+    font-family: Source Code Pro, monospace;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    border: none;
+    user-select: none;
 }
 
 div.well{
@@ -186,7 +191,7 @@ div.well{
 }
 
 .well-text p {
-    margin: 30px 0px 30px 5px;
+    margin: 2vh 0px 2vh 5px;
 }
 
 .well-text code {
@@ -200,8 +205,8 @@ div.well{
 }
 
 .content-block p.comments{
-    margin-bottom: 5%;
-    margin-top: 3%;
+    margin: 2vh 0 2vh 0;
+    font-size: 3.5vw;
 }
 
 
@@ -279,8 +284,8 @@ footer a:hover {
     color: #999;
 }
 
-.well p.inline {
-    display: inline;
+.well p {
+    font-size: 3.5vw;
 }
 
 /* fixed side nav */
@@ -316,4 +321,50 @@ footer a:hover {
 .content-block.half {
     max-height: 50%;
     min-height: 0px;
+}
+
+p.contact {
+    color: black;
+    font-size: 36px;
+}
+
+p.contact a {
+    color: black;
+    font-size: 36px;
+}
+
+.sidebar {
+    z-index: 1;
+    width: 20vw;
+    height: 80vh;
+}
+
+@media screen and (min-width: 800px) {
+    .nametag h1 {
+       font-size: 89px;
+    }
+    .nametag p.comments {
+        font-size: 37px;
+    }
+
+    .big-heading {
+        font-size: 3em;
+    }
+
+    .well h3 a {
+        font-size: 1.5rem;
+    }
+
+    .well p {
+        font-size: 16px;
+    }
+
+    .well .comments {
+        font-size: 16px;
+    }
+  }
+@media screen and (min-width: 500px) {
+    h3.center {
+        max-width: 5wh;
+    }
 }
