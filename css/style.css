@@ -206,7 +206,10 @@ div.well{
 
 .content-block p.comments{
     margin: 2vh 0 2vh 0;
-    font-size: 3.5vw;
+}
+
+p.comments {
+    font-size: 3vw;
 }
 
 
@@ -359,12 +362,7 @@ p.contact a {
         font-size: 16px;
     }
 
-    .well .comments {
+    p.comments {
         font-size: 16px;
     }
   }
-@media screen and (min-width: 500px) {
-    h3.center {
-        max-width: 5wh;
-    }
-}
