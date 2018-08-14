@@ -10,7 +10,7 @@ body {
 
 .content-block.half {
     max-height: 5vh;
-    min-height: 0px;
+    min-height: 0;
 }
 
 /* bav bar */
@@ -71,8 +71,8 @@ ul.nav li a:hover {
 }
 
 div.container-fluid {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .nametag h1 {
@@ -87,10 +87,10 @@ div.container-fluid {
     margin-top: 20px;
     text-align: center;
     text-transform: uppercase;
-    -webkit-margin-after: 0px;
+    -webkit-margin-after: 0;
     -webkit-margin-before: 20px;
-    -webkit-margin-end: 0px;
-    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0;
+    -webkit-margin-start: 0;
 }
 
 .nametag p.comments {
@@ -109,7 +109,7 @@ div.container-fluid {
 
 nav ul.top-nav {
     text-align: center;
-    margin: 0px;
+    margin: 0;
     display: none;
     user-select: none;
 }
@@ -155,7 +155,7 @@ div.content-block.dark#header {
 }
 
 .well h3 a:hover {
-    background: #000;
+    background: rgb(26, 26, 26);
 }
 
 .well h3 a {
