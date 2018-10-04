@@ -1,3 +1,4 @@
+
 html,
 body {
     font-family: "Source Sans Pro", sans-serif;
@@ -6,6 +7,28 @@ body {
     height: 100%;
     color: #333;
     background: #fff;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; /* exact value is given through JavaScript */
+    overflow: auto;
+}
+
+.row-spacer {
+    max-height: 5vw;
+    height: 0;
+
 }
 
 .content-block.half {
@@ -171,6 +194,8 @@ div.content-block.dark#header {
 
 div.well {
     padding: 0 20px 0 20px;
+    margin-bottom: 3vw;
+    
 }
 
 .left {
@@ -187,8 +212,8 @@ div.well {
 
 .well-text code {
     font-family: "Source Code Pro", monospace;
-    font-size: .75rem;
-    background: #fff;
+    font-size: 1rem;
+    background: #eff2f7;
     border-radius: 3px;
     padding: 3px 5px;
     line-height: 20px;
@@ -333,6 +358,10 @@ p.contact a {
     height: 80vh;
 }
 
+code.dark {
+    background: rgb(46, 46, 46);
+}
+
 @media screen and (min-width: 800px) {
     .nametag h1 {
         font-size: 89px;
@@ -347,9 +376,25 @@ p.contact a {
         font-size: 1.5rem;
     }
     .well p {
-        font-size: 16px;
+        font-size: 1.4rem;
     }
     p.comments {
-        font-size: 16px;
+        font-size: 1.2rem;
+    }
+
+    .row-spacer {
+        height: 5vh;
+    }
+
+    div.well {
+        min-height: 10vw;
+    }
+
+    div.content-block {
+        min-height: 70vh;
+    }
+
+    code {
+        font-size: 1.3rem;
     }
 }

@@ -24,3 +24,7 @@
 //         }
 //     }
 // }
+
+var parent = document.html;
+var child = document.body;
+child.style.right = child.clientWidth - child.offsetWidth + "px";
