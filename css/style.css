@@ -59,6 +59,8 @@ ul.nav li {
     border: 2px solid #eaeaea;
     border-radius: 3px;
     text-align: center;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
 }
 
 li {
@@ -73,10 +75,12 @@ ul.nav li a {
     border: none;
     cursor: pointer;
     text-align: center;
+    transition-duration: 0.3s;
+    transition-property: color, text-decoration;
 }
 
 ul.nav li:hover {
-    background: #eaeaea;
+    background-color: #eaeaea;
     color: #333;
 }
 
@@ -141,6 +145,8 @@ nav ul.top-nav li {
 nav ul.top-nav li a {
     text-decoration: underline;
     color: #fff;
+    transition-duration: 1s;
+    transition-property: color;
 }
 
 nav ul.top-nav li a:hover {
@@ -186,10 +192,21 @@ div.content-block.dark#header {
     text-align: left;
     text-decoration: none;
     user-select: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.7s;
+
+}
+
+@keyframes link-hover {
+    from { background-color: #333; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+    to {background-color: rgb(26, 26, 26); box-shadow: none;}
+
 }
 
 .well h3 a:hover {
-    background: rgb(26, 26, 26);
+    background-color: rgb(26, 26, 26);
+    box-shadow: none;
 }
 
 div.well {
@@ -232,6 +249,15 @@ div.content-block.light {
     color: #333;
     background: #fff;
     margin: 0;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.container-light {
+    padding: 5em;
+    background-image: url(../assets/cartographer.png);
+    background-repeat: repeat;
+    margin: 0;
 }
 
 div.content-block.light div.well {
@@ -262,6 +288,7 @@ code.dark {
     color: white;
     background: none;
     user-select: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 code {
@@ -271,6 +298,8 @@ code {
 a.black-link {
     color: #333;
     text-decoration: underline;
+
+
 }
 
 a.black-link:hover {
@@ -396,7 +425,8 @@ code.dark {
     }
 
     div.content-block {
-        min-height: 70vh;
+        min-height: fit-content;
+
     }
 
     code {
