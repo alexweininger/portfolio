@@ -1,4 +1,3 @@
-
 html,
 body {
     font-family: "Source Sans Pro", sans-serif;
@@ -21,7 +20,8 @@ body {
     top: 0px;
     bottom: 0px;
     left: 0px;
-    right: 0px; /* exact value is given through JavaScript */
+    right: 0px;
+    /* exact value is given through JavaScript */
     overflow: auto;
 }
 
@@ -195,7 +195,7 @@ div.content-block.dark#header {
 div.well {
     padding: 0 20px 0 20px;
     margin-bottom: 3vw;
-    
+
 }
 
 .left {
@@ -366,18 +366,23 @@ code.dark {
     .nametag h1 {
         font-size: 89px;
     }
+
     .nametag p.comments {
         font-size: 37px;
     }
+
     .big-heading {
         font-size: 3em;
     }
+
     .well h3 a {
         font-size: 1.5rem;
     }
+
     .well p {
         font-size: 1.4rem;
     }
+
     p.comments {
         font-size: 1.2rem;
     }
