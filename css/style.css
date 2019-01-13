@@ -172,7 +172,7 @@ div.content-block.dark#header {
     background-repeat: repeat;
     padding-bottom: 3%;
     user-select: none;
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 .center {
